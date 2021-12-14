@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Yanone+Kaffeesatz&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.header{
+    height: 100vh;
+    background-color: rgba(240, 207, 207, 0.768);
+    
+}
+.box{   
+   margin-top: 60px;
+    border: 1px solid black;
+    height: 79vh;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    background-image: linear-gradient(to right bottom, rgba(252, 238, 238, 0.481), rgba(132, 211, 132, 0.405)) ,url('pictures/background1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+h4{
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: black;
+    cursor: pointer;
+    font-weight: bolder;
+}
+h5{
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: black;
+    display: block;
+    text-align: left;
+    text-align: justify;
+    font-weight: bolder;
+}
+h4:hover{
+    color: rgb(34, 30, 238);
+    font-weight: bolder;
+    
+}
+h5:hover{
+    color: rgb(34, 30, 238);
+    font-weight: bolder;
+}
+
+h1:hover{
+    color: rgb(34, 30, 238);
+}
+h1{
+    font-size: 80px;
+    color: black;
+    margin-top: 10px;
+}
+.btn{
+    color: white;
+    background-color: navy;
+}
+.bbt{
+    margin:20px 0 20px 0;
+    padding: 8px 70px;
+    border: none;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    animation: movedown 6s ease-out 0.8s;
+    animation-fill-mode: backwards;
+}
+.bbt1{
+    margin: 18px 0 40px 0;
+    padding: 8px 78px;
+    border: none;
+    font-size: 20px;
+    border-radius: 10px;
+    animation: moveup 5s ease-out 0.8s;
+    animation-fill-mode: backwards;
+}
+.bbt1:hover{
+    
+    background-color: rgba(243, 18, 18, 0.72);
+    color: white;
+    font-weight: bolder;
+    transform: translateY(-8px);
+    box-shadow: 0 10px 5px rgba(0, 0, 255, 0.391);
+    transition: all 3s;    
+}
+
+.bbt:hover{
+    background-color: rgba(243, 18, 18, 0.72);
+    color: white;
+    font-weight: bolder;
+    transform: translateY(-8px);
+    box-shadow: 0 10px 5px rgba(0, 0, 255, 0.391);
+    transition: all 2s;
+}
+@media (max-width:576px){
+    .box{
+        margin-top: 0%;
+        border-radius: 0 0 10px 10px;
+        height: 85vh;
+        
+    }
+    .header{
+        background-color: white;
+    }
+}
+@keyframes moveup{
+    0%{
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+
+    }
+}
+@keyframes movedown{
+    0%{
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+
+    }
+}
+
