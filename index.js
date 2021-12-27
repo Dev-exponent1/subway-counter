@@ -10,6 +10,6 @@ function save() {
     saveJs.textContent+=enter;
     increment=0;
     counterJs.textContent=0;  
-    alert("Saved successfully")
+    alert("Count Saved successfully")
 }
 
